@@ -1,0 +1,105 @@
+@import '@/styles/variables.scss';
+
+.aboutContainer {
+    align-self: center;
+    @media (max-width: $sm) {
+        align-self: flex-start;
+        margin-top: 50px;
+    }
+}
+
+.navLeft {
+    font-size: 4rem;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    @media (max-width: $lg) {
+        display: none;
+    }
+}
+
+.navRight {
+    font-size: 4rem;
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    @media (max-width: $lg) {
+        display: none;
+    }
+}
+
+.content {
+
+    @media (max-width: $sm) {
+        text-align: left;
+        font-size: 35px;
+    }
+
+    @media (min-width: $sm) and (max-width: $md) {
+        font-size: 48px;
+        text-align: center;
+    }
+    @media (min-width: $md) and (max-width: $lg) {
+        font-size: 60px;
+        text-align: center;
+    }
+    @media (min-width: $lg) {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    @media (max-height: $sm) {
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+.header2Type1 {
+    font-family: 'RoxboroughCF-Regular';
+    font-style: normal;
+    font-weight: normal;
+    display: inline;
+}
+
+.header2Type2 {
+    font-family: 'GraphikSemiBold';
+    display: inline;
+}
+
+.header5Type {
+    font-family: 'GraphikRegular';
+    display: inline;
+    font-weight: normal;
+    font-size: .5em;
+}
+
+.header4Type {
+    font-family: 'GraphikRegularItalic';
+    text-decoration: underline;
+    font-weight: normal;
+    font-style: italic;
+    display: inline;
+    line-height: 120%;
+    font-size: .7em;
+}
+
+.spacer1 {
+    height: .5em;
+}
+
+.spacer2 {
+    height: 1em;
+}
+
+.showForMobile {
+    @media (max-width: $sm) {
+        display: block;
+    }
+    @media (min-width: $sm) {
+        display: none;
+    }
+}

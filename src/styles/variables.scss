@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+$primaryColor: #3a678c;
+$secondaryColor: gray;
+
+$green: #52aa52;
+$orange: #ff7e14;
+$red: #e93a3a;
+
+$darkColor: #000000;
+$grayColor: #707070;
+$lightColor: #ffffff;
+
+$slowestDuration: 2s;
+$slowDuration: 1s;
+$normalDuration: .5s;
+$fastDuration: .3s;
+$fastestDuration: .2s;
+
+$fixTopNavHeight: 15vh;
+$fixMainHeight: 70vh;
+$fixBottomNavHeight: 15vh;
+
+// screen sizes
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;

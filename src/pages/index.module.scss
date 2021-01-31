@@ -1,0 +1,80 @@
+@import '@/styles/variables.scss';
+
+.indexContainer {
+    align-self: center;
+}
+
+.navLeft {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 1rem;
+    transform: rotate(-90deg);
+    @media (max-width: $lg) {
+        display: none;
+    }
+}
+
+.navRight {
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 1rem;
+    transform: rotate(90deg);
+    @media (max-width: $lg) {
+        display: none;
+    }
+}
+
+.content {
+    text-align: center;
+
+    @media (max-width: $sm) {
+        font-size: 75px;
+    }
+
+    @media (min-width: $sm) and (max-width: $md) {
+        font-size: 75px;
+    }
+    @media (min-width: $md) and (max-width: $lg) {
+        font-size: 130px;
+    }
+    @media (min-width: $lg) {
+        font-size: 160px;
+    }
+
+    @media (max-height: $sm) {
+        font-size: 35px;
+    }
+}
+
+.header1Type1 {
+    font-family: 'RoxboroughCF-Regular';
+    font-style: normal;
+    font-weight: normal;
+
+    margin: 0;
+    line-height: 0;
+
+    margin-bottom: .85em;
+
+    @media (min-width: $md) {
+        margin-top: 60px;
+    }
+    
+    @media (max-height: $sm) {
+        margin-top: 0px;
+    }
+}
+
+.header1Type2 {
+    font-family: 'GraphikSemiBold', sans-serif;
+    line-height: 0;
+    margin: 0;
+    
+    margin-bottom: .5em;
+}
+
+.button {
+    font-size: .3em;
+}

@@ -1,0 +1,105 @@
+@import '@/styles/variables.scss';
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    top: 0;
+    width: 100%;
+    height: $fixTopNavHeight;
+    z-index: 9;
+}
+
+.topMenuDesktop {
+    display: block;
+    @media (max-width: $lg) {
+        display: none;
+    }
+}
+
+.topMenuMobile {
+    display: none;
+    @media (max-width: $lg) {
+        display: block;
+        text-align: right;
+
+        & ul li {
+            margin: 0 .5rem;
+        }
+
+    }
+} 
+
+.main {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    top: $fixTopNavHeight;
+    width: 100vw;
+    height: $fixMainHeight;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: $fixBottomNavHeight;
+    vertical-align: bottom;
+    justify-content: space-between;
+    z-index: 9;
+
+    @media (max-width: $lg) {
+        text-align: center;
+    }
+
+}
+.footer2 {
+    @media (max-width: $lg) {
+        text-align: left;
+    }
+}
+
+.bottomMenuContainer {
+    text-align: right;
+    @media (max-width: $lg) {
+        text-align: center;
+    }
+}
+.bottomMenuContainer2 {
+    @media (max-width: $lg) {
+        text-align: left;
+    }
+}
+
+.bottomMenu li {
+    @media (max-width: $lg) {
+        margin: 0 .3rem;
+    }
+}
+
+.bottomMenu2 li {
+    @media (max-width: $lg) {
+        margin: 0 .6rem 0 0;
+    }
+}
+
+.dotContainer{
+    text-align: center;
+    @media (max-width: $lg) {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+    }
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: inherit;
+    background-color: currentColor;
+    display: inline-block;
+    cursor: pointer;
+}

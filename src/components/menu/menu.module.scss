@@ -1,0 +1,22 @@
+.base {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    & li {
+        padding-right: .5rem;
+        padding-bottom: .5rem;
+    }
+}
+
+.fluid {
+    width: 100%;
+}
+
+.horizontal {
+    & li {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}

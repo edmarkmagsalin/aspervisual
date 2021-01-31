@@ -1,0 +1,29 @@
+.base {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    user-select: none;
+    width: 0vw;
+    height: 0vh;
+}
+
+.fluid {
+    width: 100%;
+}
+
+.isOpen {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    z-index: 9999;
+}

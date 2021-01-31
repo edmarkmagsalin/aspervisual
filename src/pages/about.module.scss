@@ -1,0 +1,209 @@
+@import '@/styles/variables.scss';
+
+.aboutContainer {
+    align-self: center;
+    @media (max-width: $sm) {
+        align-self: flex-start;
+        margin-top: 50px;
+    }
+}
+
+.navLeft {
+    font-size: 4rem;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    @media (max-width: $lg) {
+        display: none;
+    }
+}
+
+.navRight {
+    font-size: 4rem;
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    @media (max-width: $lg) {
+        display: none;
+    }
+}
+
+.content {
+    text-align: left;
+    line-height: 100%;
+
+    @media (max-width: $sm) {
+        font-size: 15px;
+        margin-left: .5rem;
+    }
+
+    @media (min-width: $sm) and (max-width: $md) {
+        font-size: 22px;
+        margin-left: .5rem;
+    }
+    @media (min-width: $md) and (max-width: $lg) {
+        font-size: 30px;
+        margin-left: 1rem;
+    }
+    @media (min-width: $lg) and (max-width: $xl) {
+        font-size: 32px;
+        margin-left: 10rem;
+    }
+    @media (min-width: $xl) {
+        font-size: 40px;
+        margin-left: 10rem;
+    }
+
+    @media (max-height: $sm) {
+        font-size: 15px;
+        margin-left: .5rem;
+    }
+}
+
+.header2Type1 {
+    font-family: 'RoxboroughCF-Regular';
+    font-style: normal;
+    font-weight: normal;
+    display: inline;
+}
+
+.header2Type2 {
+    font-family: 'GraphikSemiBold', sans-serif;
+    display: inline;
+}
+
+.rectangle {
+    width: 4.5em;
+    height: 1.5em;
+    margin: 0 1em;
+    
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        color: inherit;
+        background-color: currentColor;
+        top: 50%;
+        transform: translateY(-36%);
+        width: 100%;
+        height: 120%;
+    }
+}
+
+.square {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 1em 0 0;
+    
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        color: inherit;
+        background-color: currentColor;
+        top: 50%;
+        transform: translateY(-36%);
+        width: 120%;
+        height: 120%;
+    }
+}
+
+.oval {
+    width: 5em;
+    height: 1.5em;
+    margin: 0 .5em 0 0;
+
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        color: inherit;
+        background-color: currentColor;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 120%;
+        border-radius: 80%;
+    }
+}
+
+.dash {
+    width: 2em;
+    height: 1.5em;
+    margin: 0 .5em;
+
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        color: inherit;
+        background-color: currentColor;
+        top: 50%;
+        transform: translateY(-20%);
+        height: 30%;
+        width: 100%;
+    }
+}
+
+.inlineImage {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 .5em 0 0;
+
+    display: inline-block;
+    position: relative;
+
+    & img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-45%);
+        height: 140%;
+        width: 140%;
+    }
+}
+
+.inlineImageLarge {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 .5em 0 0;
+
+    display: inline-block;
+    position: relative;
+
+    & img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-45%);
+        height: 250%;
+        width: 250%;
+    }
+}
+
+.spacer {
+    height: .5em;
+}
+
+.spacer2 {
+    height: 1em;
+}
+
+.showForMobile {
+    @media (max-width: $sm) {
+        display: block;
+    }
+    @media (min-width: $sm) {
+        display: none;
+    }
+}

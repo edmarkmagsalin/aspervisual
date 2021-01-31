@@ -1,0 +1,152 @@
+@import '@/styles/variables.scss';
+
+.base {
+    font-size: 1rem;
+    font-family: 'Roboto';
+    position: relative;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    color: $darkColor;
+    border: solid 2px transparent;
+    display: inline-flex;
+    justify-content: center;
+
+    &.outline {
+        background-color: transparent;
+        border: solid 2px $darkColor;
+    }
+}
+
+.primary {
+    background-color: lighten($primaryColor, 10);
+    border: solid 2px lighten($primaryColor, 10);
+    color: $lightColor;
+    
+    &.outline {
+        background-color: transparent;
+        border: solid 2px lighten($primaryColor, 10);
+        color: lighten($primaryColor, 10);
+    }
+    
+    &:hover {
+        background-color: $primaryColor;
+        border: solid 2px $primaryColor;
+        color: $lightColor;
+    }
+}
+
+.secondary {
+    background-color: lighten($secondaryColor, 10);
+    border: solid 2px lighten($secondaryColor, 10);
+    color: $lightColor;
+    
+    &.outline {
+        background-color: transparent;
+        border: solid 2px lighten($secondaryColor, 10);
+        color: lighten($secondaryColor, 10);
+    }
+
+    &:hover {
+        background-color: $secondaryColor;
+        border: solid 2px $secondaryColor;
+        color: $lightColor;
+    }
+}
+
+.light {
+    background-color: lighten($lightColor, 10);
+    border: solid 2px lighten($darkColor, 10);
+    color: $darkColor;
+    
+    &.outline {
+        background-color: transparent;
+        border: solid 2px lighten($lightColor, 10);
+        color: lighten($lightColor, 10);
+    }
+
+    &:hover {
+        background-color: $lightColor;
+        border: solid 2px $darkColor;
+        color: $darkColor;
+    }
+}
+
+.dark {
+    background-color: lighten($darkColor, 10);
+    border: solid 2px lighten($darkColor, 10);
+    color: $lightColor;
+    &:hover {
+        background-color: $darkColor;
+        border: solid 2px $darkColor;
+    }
+}
+
+.red {
+    background-color: lighten($red, 10);
+    border: solid 2px lighten($red, 10);
+    color: $lightColor;
+    &:hover {
+        background-color: $red;
+        border: solid 2px $red;
+    }
+}
+
+.orange {
+    background-color: lighten($orange, 10);
+    border: solid 2px lighten($orange, 10);
+    color: $lightColor;
+    &:hover {
+        background-color: $orange;
+        border: solid 2px $orange;
+    }
+}
+
+.green {
+    background-color: lighten($green, 10);
+    border: solid 2px lighten($green, 10);
+    color: $lightColor;
+    &:hover {
+        background-color: $green;
+        border: solid 2px $green;
+    }
+}
+
+.APV {
+    background-color: transparent;
+    border: solid 4px $lightColor;
+    padding: .8rem 3rem;
+    border-radius: 70%;
+    color: $lightColor;
+    font-size: 2rem;
+    font-family: 'GraphikRegularItalic';
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.fluid {
+    width: 100%;
+}
+
+.large {
+    font-size: 2rem;
+}
+
+.medium {
+    font-size: 1.5rem;
+}
+
+.small {
+    font-size: .5rem;
+}
+
+.loading {
+    pointer-events: none;
+    opacity: .8;
+}
+
+.rounded {
+    border-radius: 2rem;
+}
