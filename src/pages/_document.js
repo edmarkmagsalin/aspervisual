@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-            <meta name="description" content="" />
+            <meta name="description" content="AS PER VISUAL is a creative studio in the works to create visual content for creators & visionaries. Creative Design, Video Editing, Content Writing & Creation, Production, based in Manila, PH" />
             <meta name="msapplication-TileColor" content="#ffffff" />
             <meta name="theme-color" content="#ffffff" />
             <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png?v=BGaNzpRrWl" />
