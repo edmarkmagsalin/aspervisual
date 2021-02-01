@@ -41,8 +41,7 @@ export default function About() {
                             />
                         </span>
                         <div className={styles.spacer2}></div>
-                        <h2 className={styles.header2Type2}>FOR&nbsp;CREATORS,</h2>
-                        <h2 className={styles.header2Type2}>COMMUNITIES,</h2>
+                        <h2 className={styles.header2Type2}>FOR&nbsp;CREATORS, COMMUNITIES,</h2>
                         <div className={styles.spacer}></div>
                         <span className={styles.oval}></span>
                         <h2 className={styles.header2Type2}>&amp;&nbsp;BUSINESSES.</h2>
