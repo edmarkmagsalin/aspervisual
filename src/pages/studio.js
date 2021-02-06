@@ -21,7 +21,7 @@ export default function Studio() {
 
                         <h5 className={styles.header5Type}>A Creative Studio in the works.</h5><br /><br /><br />
                         
-                        <h4 className={styles.header4Type}>Creative&nbsp;Design, <br className={styles.showForMobile} />Video&nbsp;Editing, <br />Content&nbsp;Writing&nbsp;&&nbsp;Creation, Production</h4>
+                        <h4 className={styles.header4Type}>Creative&nbsp;Design, <br className={styles.showForMobile} />Video&nbsp;Editing, <br />Content&nbsp;Writing&nbsp;&&nbsp;Creation,  <br className={styles.showForMobile>Production</h4>
                     </Col>
                     <Col sm='1' className={styles.navRight}>
                         <Link href='/'>
