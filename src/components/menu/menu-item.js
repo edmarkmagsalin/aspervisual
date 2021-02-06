@@ -4,7 +4,8 @@ export function MenuItem ({
     children,
     text,
     href,
-    style
+    style,
+    target
 }) {
     return (
         <li
@@ -14,7 +15,7 @@ export function MenuItem ({
                 { !!children ? (
                     children
                 ) : (
-                    <a>{!!text ? text : 'link'}</a>
+                    <a target={!!target ? target : 'parent'}>{!!text ? text : 'link'}</a>
                 )}
             </Link>
         </li>

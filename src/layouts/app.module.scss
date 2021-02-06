@@ -8,23 +8,51 @@
     width: 100%;
     height: $fixTopNavHeight;
     z-index: 9;
+
+    @media (max-width: $sm) {
+        height: $fixTopNavHeightM;
+    }
+
+    @media (max-height: $sm) {
+        height: $fixTopNavHeightM;
+    }
 }
 
-.topMenuDesktop {
-    display: block;
-    @media (max-width: $lg) {
+.topMenuDesktopContainer {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: $sm) {
+        display: none;
+    }
+    @media (max-height: $sm) {
         display: none;
     }
 }
 
+.topMenuDesktop {
+    text-align: left;
+}
+
 .topMenuMobile {
     display: none;
-    @media (max-width: $lg) {
+    @media (max-width: $sm) {
         display: block;
         text-align: right;
+        margin-right: 36px;
 
         & ul li {
-            margin: 0 .5rem;
+            margin-left: 11px;
+        }
+
+    }
+    @media (max-height: $sm) {
+        display: block;
+        text-align: right;
+        margin-right: 36px;
+
+        & ul li {
+            margin-left: 11px;
         }
 
     }
@@ -37,69 +65,211 @@
     top: $fixTopNavHeight;
     width: 100vw;
     height: $fixMainHeight;
+
+    @media (max-width: $sm) {
+        top: $fixTopNavHeightM;
+        width: 100vw;
+        height: $fixMainHeightM;
+    }
+
+    @media (max-height: $sm) {
+        top: $fixTopNavHeightM;
+        width: 100vw;
+        height: $fixMainHeightM;
+    }
 }
 
 .footer {
     display: flex;
     align-items: flex-end;
     position: fixed;
-    bottom: 0;
+    bottom: 1rem;
     width: 100%;
     height: $fixBottomNavHeight;
     vertical-align: bottom;
     justify-content: space-between;
     z-index: 9;
 
-    @media (max-width: $lg) {
+    @media (max-width: $sm) {
         text-align: center;
+        padding: 2em 2em 0 2em;
+        height: $fixBottomNavHeightM;
+    }
+
+    @media (max-height: $sm) {
+        text-align: left;
+        padding: 2em 2em 0 2em;
+        height: $fixBottomNavHeightM;
     }
 
 }
-.footer2 {
-    @media (max-width: $lg) {
+.footerOtherPages {
+
+    @media (max-width: $sm) {
+        text-align: left;
+    }
+
+    @media (max-height: $sm) {
         text-align: left;
     }
 }
 
 .bottomMenuContainer {
     text-align: right;
+
     @media (max-width: $lg) {
         text-align: center;
     }
 }
-.bottomMenuContainer2 {
+.bottomMenuContainerOtherPages {
     @media (max-width: $lg) {
+        text-align: left;
+    }
+
+
+    @media (max-width: $sm) {
+        text-align: left;
+    }
+
+    @media (max-height: $sm) {
         text-align: left;
     }
 }
 
 .bottomMenu li {
-    @media (max-width: $lg) {
-        margin: 0 .3rem;
+
+    @media (max-width: $sm) {
+        padding: 0 5px 0 5px;
+    }
+
+    @media (min-width: $sm) and (max-width: $md) {
+        padding: 0 5px 0 5px;
+    }
+    @media (min-width: $md) and (max-width: $lg) {
+        padding: 0 5px 0 5px;
+    }
+    @media (min-width: $lg) and (max-width: $xl) {
+        padding: 0 0 0 14px;
+    }
+    @media (min-width: $xl) {
+        padding: 0 0 0 14px;
+    }
+
+    @media (max-height: $sm) {
+        padding: 0 5px 0 5px;
     }
 }
 
-.bottomMenu2 li {
-    @media (max-width: $lg) {
-        margin: 0 .6rem 0 0;
+.bottomMenuOtherPages li {
+
+    @media (max-width: $sm) {
+        padding: 0 10px 0 0;
+    }
+
+    @media (min-width: $sm) and (max-width: $md) {
+        padding: 0 10px 0 0;
+    }
+    @media (min-width: $md) and (max-width: $lg) {
+        padding: 0 10px 0 0;
+    }
+    @media (min-width: $lg) and (max-width: $xl) {
+        padding: 0 0 0 14px;
+    }
+    @media (min-width: $xl) {
+        padding: 0 0 0 14px;
+    }
+
+    @media (max-height: $sm) {
+        padding: 0 10px 0 0;
     }
 }
 
 .dotContainer{
     text-align: center;
-    @media (max-width: $lg) {
+
+    @media (max-width: $sm) {
         position: fixed;
-        bottom: 2rem;
-        right: 2rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
 }
 
 .dot {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     color: inherit;
     background-color: currentColor;
     display: inline-block;
     cursor: pointer;
+
+    @media (max-width: $sm) {
+        width: 16px;
+        height: 16px;
+    }
+
+    @media (max-height: $sm) {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.icon {
+    color: currentColor;
+    margin: 0;
+    width: 24px;
+    height: auto;
+
+    @media (max-width: $sm) {
+        width: 16px;
+        height: auto;
+    }
+
+    @media (max-height: $sm) {
+        width: 24px;
+        height: auto;
+    }
+}
+
+.logoContainer {
+    @media (max-width: $sm) {
+        height: 92px;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 8px;
+    }
+
+    @media (max-height: $sm) {
+        height: 92px;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 8px;
+    }
+}
+
+.logo {
+    @media (max-width: $sm) {
+        transform: scale(.45)
+    }
+
+    @media (min-width: $sm) and (max-width: $md) {
+        transform: scale(1);
+        margin-top: 26px;
+    }
+    @media (min-width: $md) and (max-width: $lg) {
+        transform: scale(1);
+        margin-top: 26px;
+    }
+    @media (min-width: $lg) and (max-width: $xl) {
+        transform: scale(1);
+        margin-top: 26px;
+    }
+    @media (min-width: $xl) {
+        transform: scale(1);
+        margin-top: 26px;
+    }
+
+    @media (max-height: $sm) {
+        transform: scale(.45)
+    }
 }

@@ -11,12 +11,16 @@
     outline: 0;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     display: flex;
     align-items: center;
     font-family: 'GraphikRegular', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 26px;
     letter-spacing: 0px;
     padding: 0;
     margin: 0;
@@ -24,25 +28,33 @@ body {
     height: 100vh;
     color: $darkColor;
     background-color: $lightColor;
+    transition: color .4s ease-in-out;
 
     html > &.withBG {
+        color: $lightColor;
 
         @media (max-width: $sm) {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('/bg-mobile.png');
-
+            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),  url('/bg-mobile.jpg');
+        
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
-            color: $lightColor;
         }
 
         @media (min-width: $sm) {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('/bg-desktop.png');
-
+            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),  url('/bg-desktop.jpg');
+        
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
-            color: $lightColor;
+        }
+
+        @media (max-height: $sm) {
+            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),  url('/bg-mobile.jpg');
+        
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 
@@ -64,10 +76,17 @@ body {
     }
 }
 
-@media (max-width: $lg) {
+@media (max-width: $sm) {
     body {
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+@media (max-height: $sm) {
+    body {
+        font-size: 10px;
+        line-height: 12px;
     }
 }
 

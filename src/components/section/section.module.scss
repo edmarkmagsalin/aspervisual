@@ -2,15 +2,30 @@
 
 .base {
 
-    padding: 1rem;
+    @media (max-width: $sm) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-    @media (min-width: $md) {
+    @media (min-width: $sm) and (max-width: $md) {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-
-    @media (min-width: $lg) {
+    @media (min-width: $md) and (max-width: $lg) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media (min-width: $lg) and (max-width: $xl) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media (min-width: $xl) {
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+
+    @media (max-height: $sm) {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

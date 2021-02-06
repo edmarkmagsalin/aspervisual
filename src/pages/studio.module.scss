@@ -1,80 +1,112 @@
 @import '@/styles/variables.scss';
 
 .aboutContainer {
+    
     align-self: center;
+
     @media (max-width: $sm) {
         align-self: flex-start;
-        margin-top: 50px;
+        margin-top: 85px;
+    }
+
+    @media (max-height: $sm) {
+        align-self: flex-start;
+        margin-top: 85px;
     }
 }
 
-.navLeft {
+.navRight{
     font-size: 4rem;
     display: block;
-    position: fixed;
-    top: 50%;
-    left: 1rem;
-    transform: translateY(-50%);
-    @media (max-width: $lg) {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    transform: translateY(50%);
+    @media (max-width: $sm) {
         display: none;
     }
-}
-
-.navRight {
-    font-size: 4rem;
-    display: block;
-    position: fixed;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
-    @media (max-width: $lg) {
+    @media (max-height: $sm) {
         display: none;
     }
 }
 
 .content {
+    text-align: center;
 
     @media (max-width: $sm) {
+        font-size: 36px;
         text-align: left;
-        font-size: 35px;
+        margin-left: .8em;
     }
 
     @media (min-width: $sm) and (max-width: $md) {
-        font-size: 48px;
-        text-align: center;
+        font-size: 50px;
     }
     @media (min-width: $md) and (max-width: $lg) {
-        font-size: 60px;
-        text-align: center;
+        font-size: 80px;
     }
-    @media (min-width: $lg) {
-        font-size: 70px;
-        text-align: center;
+    @media (min-width: $lg) and (max-width: $xl) {
+        font-size: 100px;
+    }
+    @media (min-width: $xl) {
+        font-size: 142px;
     }
 
     @media (max-height: $sm) {
-        text-align: center;
-        font-size: 35px;
+        font-size: 36px;
+        text-align: left;
+        margin-left: .8em;
     }
 }
 
 .header2Type1 {
-    font-family: 'RoxboroughCF-Regular';
+    font-family: 'RoxboroughCF-Bold';
     font-style: normal;
     font-weight: normal;
     display: inline;
+    font-size: 1em;
+    line-height: 0.8591549296em;
 }
 
 .header2Type2 {
-    font-family: 'GraphikSemiBold';
+    font-family: 'GraphikBold';
     display: inline;
+    font-size: 1em;
 }
 
 .header5Type {
     font-family: 'GraphikRegular';
     display: inline;
     font-weight: normal;
-    font-size: .5em;
+
+    @media (max-width: $sm) {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    @media (min-width: $sm) and (max-width: $md) {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    @media (min-width: $md) and (max-width: $lg) {
+        font-size: 25px;
+        line-height: 28px;
+    }
+    @media (min-width: $lg) and (max-width: $xl) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    @media (min-width: $xl) {
+        font-size: 37px;
+        line-height: 44px;
+    }
+
+    @media (max-height: $sm) {
+        font-size: 15px;
+        line-height: 18px;
+        
+    }
 }
 
 .header4Type {
@@ -83,8 +115,34 @@
     font-weight: normal;
     font-style: italic;
     display: inline;
-    line-height: 120%;
-    font-size: .7em;
+
+    @media (max-width: $sm) {
+        font-size: 23px;
+        line-height: 28px;
+    }
+
+    @media (min-width: $sm) and (max-width: $md) {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    @media (min-width: $md) and (max-width: $lg) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    @media (min-width: $lg) and (max-width: $xl) {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    @media (min-width: $xl) {
+        font-size: 46px;
+        line-height: 55px;
+    }
+
+    @media (max-height: $sm) {
+        font-size: 23px;
+        line-height: 28px;
+        
+    }
 }
 
 .spacer1 {

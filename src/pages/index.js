@@ -4,6 +4,7 @@ import styles from './index.module.scss'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Modal } from '@/views'
+import { motion } from "framer-motion";
 
 export default function Home() {
     const [imgTheme, setImgTheme] = useState('light')
@@ -25,14 +26,18 @@ export default function Home() {
         }
     }
 
-    const toggleModal = () => {
+    const toggleModal = (e) => {
 
         // stop video when closing modal
         if(isModalOpen) {
             stopVideo(document.querySelector('#yt-iframe'))
+            setIsModalOpen(!isModalOpen)
         }
 
-        setIsModalOpen(!isModalOpen)
+        if(e==='btn') {
+            setIsModalOpen(!isModalOpen)
+        }
+
     }
 
     return (
@@ -41,12 +46,12 @@ export default function Home() {
                 isOpen={isModalOpen}
                 onClick={() => toggleModal()}
             >
-                <div id="yt-iframe">
+                <div id="yt-iframe" className={styles.videoInIframe}>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/FgjHbiTIshA?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </Modal>
             <Container className={styles.indexContainer}>
-                <Row middle>
+                <Row middle className={styles.indexRelativeContainer}>
                     <Col sm='1' className={styles.navLeft}>
                         <Link href='/studio'>
                             <a>STUDIO</a>
@@ -59,7 +64,7 @@ export default function Home() {
                         <Button
                             text='PLAY REEL'
                             color='APV'
-                            onClick={() => toggleModal()}
+                            onClick={() => toggleModal('btn')}
                             className={styles.button}
                         />
                     </Col>

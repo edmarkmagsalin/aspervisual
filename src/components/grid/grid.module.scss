@@ -2,9 +2,13 @@
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-right: -.5rem;
     margin-left: -.5rem;
+    position: relative;
+    @media (max-width: $sm) {
+        flex-wrap: wrap;
+    }
 }
 
 .center {
@@ -35,368 +39,332 @@
 
 .colSmall {
     &12 {
-        flex-basis: calc((100%/12)*12);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*12);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*12);
+        }
     }
 
     &11 {
-        flex-basis: calc((100%/12)*11);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*11);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*11);
+        }
     }
 
     &10 {
-        flex-basis: calc((100%/12)*10);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*10);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*10);
+        }
     }
 
     &9 {
-        flex-basis: calc((100%/12)*9);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*9);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*9);
+        }
     }
 
     &8 {
-        flex-basis: calc((100%/12)*8);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*8);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*8);
+        }
     }
 
     &7 {
-        flex-basis: calc((100%/12)*7);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*7);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*7);
+        }
     }
 
     &6 {
-        flex-basis: calc((100%/12)*6);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*6);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*6);
+        }
     }
 
     &5 {
-        flex-basis: calc((100%/12)*5);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*5);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*5);
+        }
     }
 
     &4 {
-        flex-basis: calc((100%/12)*4);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*4);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*4);
+        }
     }
 
     &3 {
-        flex-basis: calc((100%/12)*3);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*3);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*3);
+        }
     }
 
     &2 {
-        flex-basis: calc((100%/12)*2);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*2);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*2);
+        }
     }
 
     &1 {
-        flex-basis: calc((100%/12)*1);
-        padding-left: .5rem;
-        padding-right: .5rem;
+        @media (max-width: $sm) {
+            flex-basis: calc((100%/12)*1);
+        }
+        @media (max-height: $sm) {
+            flex-basis: calc((100%/12)*1);
+        }
     }
 }
 
 .colMedium {
     &12 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*12);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &11 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*11);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &10 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*10);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &9 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*9);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &8 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*8);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &7 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*7);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &6 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*6);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &5 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*5);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &4 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*4);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &3 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*3);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &2 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*2);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &1 {
-        @media (min-width: $md) {
+        @media (min-width: $sm) and (max-width: $md) {
             flex-basis: calc((100%/12)*1);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 }
 
 .colLarge {
     &12 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*12);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &11 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*11);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &10 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*10);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &9 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*9);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &8 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*8);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &7 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*7);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &6 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*6);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &5 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*5);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &4 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*4);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &3 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*3);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &2 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*2);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &1 {
-        @media (min-width: $lg) {
+        @media (min-width: $md) and (max-width: $lg) {
             flex-basis: calc((100%/12)*1);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 }
 
 .colExtraLarge {
     &12 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*12);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &11 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*11);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &10 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*10);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &9 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*9);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &8 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*8);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &7 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*7);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &6 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*6);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &5 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*5);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &4 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*4);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &3 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*3);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &2 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*2);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 
     &1 {
-        @media (min-width: $xl) {
+        @media (min-width: $lg)  {
             flex-basis: calc((100%/12)*1);
-            padding-left: .5rem;
-            padding-right: .5rem;
         }
     }
 }
