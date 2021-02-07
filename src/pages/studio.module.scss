@@ -145,14 +145,6 @@
     }
 }
 
-.spacer1 {
-    height: .5em;
-}
-
-.spacer2 {
-    height: 1em;
-}
-
 .showForMobile {
     @media (max-width: $sm) {
         display: block;
