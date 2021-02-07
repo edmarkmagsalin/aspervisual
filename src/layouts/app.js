@@ -154,19 +154,19 @@ export default function App({
                         }
                         <Col sm='12' md='3' lg='3' xl='3' className={`${styles.bottomMenuContainer} ${pathname !== '/' && styles.bottomMenuContainerOtherPages}`}>
                             <Menu horizontal className={`${styles.bottomMenu} ${pathname !== '/' && styles.bottomMenuOtherPages}`}>
-                                <MenuItem href='https://www.instagram.com/' target='_blank' text={
+                                <MenuItem href='https://www.instagram.com/_aspervisual/' target='_blank' text={
                                         <FaInstagram className={styles.icon} />
                                     }
                                 />
-                                <MenuItem href='https://vimeo.com/' target='_blank' text={
+                                <MenuItem href='https://vimeo.com/aspervisual' target='_blank' text={
                                         <FaVimeoV className={styles.icon} />
                                     }
                                 />
-                                <MenuItem href='https://www.youtube.com/' target='_blank' text={
+                                <MenuItem href='https://www.youtube.com/channel/UC-aMWYLlaqILUWlXU4UBqTA' target='_blank' text={
                                         <FaYoutube className={styles.icon} />
                                     }
                                 />
-                                <MenuItem href='https://www.behance.net/' target='_blank' text={
+                                <MenuItem href='https://www.behance.net/aspervisual' target='_blank' text={
                                         <FaBehance className={styles.icon} />
                                     }
                                 />
