@@ -58,8 +58,10 @@ export default function Home() {
                         </Link>
                     </Col>
                     <Col className={styles.content}>
-                        <h1 className={styles.header1Type1}>AS&nbsp;PER</h1>
-                        <h1 className={styles.header1Type2}>VISUAL</h1>
+                        <div style={{textAlign: 'left', display: 'inline-block'}}>
+                            <h1 className={styles.header1Type1}>AS&nbsp;PER</h1>
+                            <h1 className={styles.header1Type2}>VISUAL</h1>
+                        </div>
                         
                         <Button
                             text='PLAY REEL'
