@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import '@/styles/global.scss'
-import '@/styles/animation.scss'
 import { motion, AnimatePresence } from 'framer-motion';
 
 function APV({ Component, pageProps, router }) {
