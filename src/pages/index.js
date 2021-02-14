@@ -23,12 +23,7 @@ export default function Home() {
 
     }, [])
     
-    const [imgTheme, setImgTheme] = useState('light')
     const [isModalOpen, setIsModalOpen] = useState(false)
-
-    const setTheme = (v) => {
-        setImgTheme(v)
-    }
 
     const stopVideo = (element) => {
         const iframe = element.querySelector('iframe');
@@ -57,7 +52,7 @@ export default function Home() {
     }
 
     return (
-        <App setTheme={(v) => setTheme(v)}>
+        <App>
             <Modal
                 isOpen={isModalOpen}
                 onClick={() => toggleModal()}

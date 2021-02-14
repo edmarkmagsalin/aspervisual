@@ -8,8 +8,7 @@ import { FaInstagram, FaVimeoV, FaYoutube, FaBehance, FaFacebookSquare } from 'r
 
 export default function App({
     children,
-    changeTheme,
-    setTheme
+    // setTheme
 }) {
     const router = useRouter()
     const [imgTheme, setImgTheme] = useState(null)
@@ -25,9 +24,9 @@ export default function App({
         
         // if index page, use home themes
         if(router.pathname === '/') {
-            console.log('setting theme to dark because the current page is index..')
+            // console.log('setting theme to dark because the current page is index..')
             setImgTheme('dark')
-            setTheme('dark')
+            // setTheme('dark')
             bodyClassList.add('withBG')
             return
         } else {
@@ -39,28 +38,28 @@ export default function App({
 
             // if system themes is set
             if(window.matchMedia("(prefers-color-scheme: dark)").matches ) {
-                console.log('setting theme to dark via prefers..')
+                // console.log('setting theme to dark via prefers..')
                 setImgTheme('dark')
-                setTheme('dark')
-            } else if(window.matchMedia("(prefers-color-scheme: light)").matches ) {
-                console.log('setting theme to light via prefers..')
+                // setTheme('dark')
+            } else if(window.matchMedia("(prefers-// color-scheme: light)").matches ) {
+                // console.log('setting theme to light via prefers..')
                 setImgTheme('light')
-                setTheme('light')
+                // setTheme('light')
             }
 
         } else {
 
             // if local storage
             if(currentTheme === 'light') {
-                console.log('setting theme to light via localstorage..')
+                // console.log('setting theme to light via localstorage..')
                 setImgTheme('light')
-                setTheme('light')
+                // setTheme('light')
                 bodyClassList.remove('dark')
                 bodyClassList.add('light')
             } else if(currentTheme === 'dark') {
-                console.log('setting theme to dark via localstorage..')
+                // console.log('setting theme to dark via localstorage..')
                 setImgTheme('dark')
-                setTheme('dark')
+                // setTheme('dark')
                 bodyClassList.remove('light')
                 bodyClassList.add('dark')
             } 
@@ -74,14 +73,14 @@ export default function App({
         if(imgTheme === 'light') {
             console.log('setting theme to dark via toggling..')
             setImgTheme('dark')
-            setTheme('dark')
+            // setTheme('dark')
             bodyClassList.remove('light')
             bodyClassList.add('dark')
             localStorage.setItem('theme', 'dark');
         } else {
             console.log('setting theme to light via toggling..')
             setImgTheme('light')
-            setTheme('light')
+            // setTheme('light')
             bodyClassList.remove('dark')
             bodyClassList.add('light')
             localStorage.setItem('theme', 'light');

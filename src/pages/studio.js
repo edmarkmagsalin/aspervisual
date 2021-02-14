@@ -1,7 +1,7 @@
 import App from '@/layouts/app'
 import { Row, Col, Container } from '@/components'
 import styles from './studio.module.scss'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import Link from 'next/link'
 import router from 'next/router'
 
@@ -19,14 +19,8 @@ export default function Studio() {
 
     }, [])
 
-    const [imgTheme, setImgTheme] = useState('light')
-
-    const setTheme = (v) => {
-        setImgTheme(v)
-    }
-
     return (
-        <App setTheme={(v) => setTheme(v)}>
+        <App>
             <Container className={styles.aboutContainer}>
                 <Row middle>
                     <Col className={styles.content}>
