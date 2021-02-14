@@ -1,11 +1,24 @@
 import App from '@/layouts/app'
 import { Row, Col, Container } from '@/components'
 import styles from './about.module.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { BsArrowLeft } from 'react-icons/bs'
+import router from 'next/router'
 
 export default function About() {
+
+    useEffect(() => {
+
+        const handler = (e) => {
+            if (e.code === 'ArrowLeft') {
+                router.push('/')
+            }
+        }
+        window.addEventListener('keydown', handler)
+        return () => window.removeEventListener('keydown', handler)
+
+    }, [])
+
     const [imgTheme, setImgTheme] = useState('light')
 
     const setTheme = (v) => {

@@ -4,9 +4,25 @@ import styles from './index.module.scss'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Modal } from '@/views'
-import { motion } from "framer-motion";
+import router from 'next/router'
 
 export default function Home() {
+
+    useEffect(() => {
+
+        const handler = (e) => {
+            if (e.code === 'ArrowLeft') {
+                router.push('/studio')
+            }
+            if (e.code === 'ArrowRight') {
+                router.push('/about')
+            }
+        }
+        window.addEventListener('keydown', handler)
+        return () => window.removeEventListener('keydown', handler)
+
+    }, [])
+    
     const [imgTheme, setImgTheme] = useState('light')
     const [isModalOpen, setIsModalOpen] = useState(false)
 

@@ -1,11 +1,24 @@
 import App from '@/layouts/app'
 import { Row, Col, Container } from '@/components'
 import styles from './studio.module.scss'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { BsArrowRight } from 'react-icons/bs'
+import router from 'next/router'
 
 export default function Studio() {
+
+    useEffect(() => {
+
+        const handler = (e) => {
+            if (e.code === 'ArrowRight') {
+                router.push('/')
+            }
+        }
+        window.addEventListener('keydown', handler)
+        return () => window.removeEventListener('keydown', handler)
+
+    }, [])
+
     const [imgTheme, setImgTheme] = useState('light')
 
     const setTheme = (v) => {
