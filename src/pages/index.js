@@ -9,22 +9,6 @@ import { motion } from 'framer-motion'
 
 export default function Home() {
     const router = useRouter()
-
-    useEffect(() => {
-
-        const handler = (e) => {
-            if (e.code === 'ArrowLeft') {
-                router.push('/studio')
-            }
-            if (e.code === 'ArrowRight') {
-                router.push('/about')
-            }
-        }
-        window.addEventListener('keydown', handler)
-        return () => window.removeEventListener('keydown', handler)
-
-    }, [])
-
     const [isModalOpen, setIsModalOpen] = useState(false)
 
     const stopVideo = (element) => {
@@ -43,15 +27,42 @@ export default function Home() {
 
         // stop video when closing modal
         if(isModalOpen) {
+            console.log('bg');
             stopVideo(document.querySelector('#yt-iframe'))
             setIsModalOpen(!isModalOpen)
         }
 
         if(e==='btn') {
-            setIsModalOpen(!isModalOpen)
+            console.log('btn');
+            setIsModalOpen(true)
         }
 
     }
+    
+    useEffect(() => {
+
+        const handler = (e) => {
+            if (e.code === 'ArrowLeft') {
+                router.push('/studio')
+            }
+            if (e.code === 'ArrowRight') {
+                router.push('/about')
+            }
+            if (e.code === 'Escape') {
+                console.log(isModalOpen);
+                if(isModalOpen && document.querySelector('#yt-iframe')) {
+                    stopVideo(document.querySelector('#yt-iframe'))
+                    setIsModalOpen(!isModalOpen)
+                }
+            }
+        }
+        window.addEventListener('keydown', handler)
+        return () => {
+            setIsModalOpen(false)
+            window.removeEventListener('keydown', handler)
+        }
+
+    }, [])
 
     return (
         <>

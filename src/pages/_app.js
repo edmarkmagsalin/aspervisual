@@ -1,15 +1,13 @@
 import Head from 'next/head'
 import '@/styles/global.scss'
 
-function APV({ Component, pageProps }) {
+export default function APV({ Component, pageProps }) {
   return (
     <>
       <Head>
         <title>AS PER VISUAL</title>
       </Head>
-        <Component {...pageProps} />
+      <Component {...pageProps} />
     </>
   )
 }
-
-export default APV

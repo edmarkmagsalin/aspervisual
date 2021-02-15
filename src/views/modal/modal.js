@@ -1,5 +1,6 @@
 import classnames from 'classnames';
 import styles from './modal.module.scss'
+import { motion } from 'framer-motion'
 
 export function Modal ({
     className,
@@ -18,13 +19,32 @@ export function Modal ({
     return (
         <>
             { !!isOpen ? (
-                <div
-                    className={ classNames }
-                    style={ style }
-                    onClick={!!onClick ? onClick : null}
+
+                <motion.div
+                    key='modal'
+                    initial='pageInitial'
+                    animate='pageAnimate'
+                    exit='pageExit'
+                    variants={{
+                        pageInitial: {
+                            opacity: 0
+                        },
+                        pageAnimate: {
+                            opacity: 1
+                        },
+                        pageExit: {
+                            opacity: 0
+                        }
+                    }}
                 >
-                    {children}
-                </div>
+                    <div
+                        className={ classNames }
+                        style={ style }
+                        onClick={!!onClick ? onClick : null}
+                    >
+                        {children}
+                    </div>
+                </motion.div>
             ) : (
                 null
             )}
