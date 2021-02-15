@@ -1,7 +1,6 @@
-import { Section, Container, Row, Col, Card, Menu, MenuItem } from '@/components'
+import { Section, Container, Row, Col, Menu, MenuItem } from '@/components'
 import styles from './app.module.scss'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { FaInstagram, FaVimeoV, FaYoutube, FaBehance, FaFacebookSquare } from 'react-icons/fa'

@@ -16,12 +16,18 @@ export function Modal ({
         [styles.isOpen]: isOpen,
     })
     return (
-        <div
-            className={ classNames }
-            style={ style }
-            onClick={!!onClick ? onClick : null}
-        >
-            {children}
-        </div>
+        <>
+            { !!isOpen ? (
+                <div
+                    className={ classNames }
+                    style={ style }
+                    onClick={!!onClick ? onClick : null}
+                >
+                    {children}
+                </div>
+            ) : (
+                null
+            )}
+        </>
     )
 }

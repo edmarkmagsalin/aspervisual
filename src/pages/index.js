@@ -4,9 +4,11 @@ import styles from './index.module.scss'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Modal } from '@/views'
-import router from 'next/router'
+import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 
 export default function Home() {
+    const router = useRouter()
 
     useEffect(() => {
 
@@ -22,7 +24,7 @@ export default function Home() {
         return () => window.removeEventListener('keydown', handler)
 
     }, [])
-    
+
     const [isModalOpen, setIsModalOpen] = useState(false)
 
     const stopVideo = (element) => {
@@ -52,7 +54,7 @@ export default function Home() {
     }
 
     return (
-        <App>
+        <>
             <Modal
                 isOpen={isModalOpen}
                 onClick={() => toggleModal()}
@@ -61,33 +63,53 @@ export default function Home() {
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/FgjHbiTIshA?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </Modal>
-            <Container className={styles.indexContainer}>
-                <Row middle className={styles.indexRelativeContainer}>
-                    <Col sm='1' className={styles.navLeft}>
-                        <Link href='/studio'>
-                            <a>STUDIO</a>
-                        </Link>
-                    </Col>
-                    <Col className={styles.content}>
-                        <div style={{textAlign: 'left', display: 'inline-block'}}>
-                            <h1 className={styles.header1Type1}>AS&nbsp;PER</h1>
-                            <h1 className={styles.header1Type2}>VISUAL</h1>
-                        </div>
-                        
-                        <Button
-                            text='PLAY REEL'
-                            color='APV'
-                            onClick={() => toggleModal('btn')}
-                            className={styles.button}
-                        />
-                    </Col>
-                    <Col sm='1' className={styles.navRight}>
-                        <Link href='/about'>
-                            <a>ABOUT</a>
-                        </Link>
-                    </Col>
-                </Row>
-            </Container>
-        </App>
+            <motion.div
+                key='home'
+                initial='pageInitial'
+                animate='pageAnimate'
+                exit='pageExit'
+                variants={{
+                    pageInitial: {
+                        opacity: 0
+                    },
+                    pageAnimate: {
+                        opacity: 1
+                    },
+                    pageExit: {
+                        opacity: 0
+                    }
+                }}
+            >
+                <App>
+                    <Container className={styles.indexContainer}>
+                            <Row middle className={styles.indexRelativeContainer}>
+                                <Col sm='1' className={styles.navLeft}>
+                                    <Link href='/studio'>
+                                        <a>STUDIO</a>
+                                    </Link>
+                                </Col>
+                                <Col className={styles.content}>
+                                    <div style={{textAlign: 'left', display: 'inline-block'}}>
+                                        <h1 className={styles.header1Type1}>AS&nbsp;PER</h1>
+                                        <h1 className={styles.header1Type2}>VISUAL</h1>
+                                    </div>
+                                    
+                                    <Button
+                                        text='PLAY REEL'
+                                        color='APV'
+                                        onClick={() => toggleModal('btn')}
+                                        className={styles.button}
+                                    />
+                                </Col>
+                                <Col sm='1' className={styles.navRight}>
+                                    <Link href='/about'>
+                                        <a>ABOUT</a>
+                                    </Link>
+                                </Col>
+                            </Row>
+                    </Container>
+                </App>
+            </motion.div>
+        </>
     )
 }

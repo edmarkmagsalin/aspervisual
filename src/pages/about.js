@@ -3,9 +3,11 @@ import { Row, Col, Container } from '@/components'
 import styles from './about.module.scss'
 import { useEffect } from 'react'
 import Link from 'next/link'
-import router from 'next/router'
+import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 
 export default function About() {
+    const router = useRouter()
 
     useEffect(() => {
 
@@ -20,6 +22,23 @@ export default function About() {
     }, [])
 
     return (
+        <motion.div
+            key='about'
+            initial='pageInitial'
+            animate='pageAnimate'
+            exit='pageExit'
+            variants={{
+                pageInitial: {
+                    opacity: 0
+                },
+                pageAnimate: {
+                    opacity: 1
+                },
+                pageExit: {
+                    opacity: 0
+                }
+            }}
+        >
         <App>
             <Container className={styles.aboutContainer}>
                 <Row middle>
@@ -290,5 +309,6 @@ export default function About() {
                 </Row>
             </Container>
         </App>
+        </motion.div>
     )
 }
