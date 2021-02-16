@@ -26,16 +26,12 @@ export default function Studio() {
             key='studio'
             initial='pageInitial'
             animate='pageAnimate'
-            exit='pageExit'
             variants={{
                 pageInitial: {
                     opacity: 0
                 },
                 pageAnimate: {
                     opacity: 1
-                },
-                pageExit: {
-                    opacity: 0
                 }
             }}
         >
@@ -43,11 +39,27 @@ export default function Studio() {
                 <Container className={styles.aboutContainer}>
                     <Row middle>
                         <Col className={styles.content}>
+
+                            <motion.div
+                                initial='pageInitial'
+                                animate='pageAnimate'
+                                style={{ transition: 'opacity 1s ease-in-out' }}
+                                variants={{
+                                    pageInitial: {
+                                        opacity: 0
+                                    },
+                                    pageAnimate: {
+                                        opacity: 1
+                                    }
+                                }}
+                            >
                             <h2 className={styles.header2Type1}>AS&nbsp;PER</h2>&nbsp;<h2 className={styles.header2Type2}>VISUAL</h2><br />
 
                             <h5 className={styles.header5Type}>A Creative Studio in the works.</h5><br /><br /><br />
                             
                             <h4 className={styles.header4Type}>Creative&nbsp;Design, <br className={styles.showForMobile} />Video&nbsp;Editing, <br />Content&nbsp;Writing&nbsp;&&nbsp;Creation,  <br className={styles.showForMobile} />Production</h4>
+
+                            </motion.div>
                         </Col>
                         <Col sm='1' className={styles.navRight}>
                             <Link href='/'>

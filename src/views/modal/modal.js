@@ -19,9 +19,7 @@ export function Modal ({
     return (
         <>
             { !!isOpen ? (
-
                 <motion.div
-                    key='modal'
                     initial='pageInitial'
                     animate='pageAnimate'
                     exit='pageExit'
@@ -31,9 +29,6 @@ export function Modal ({
                         },
                         pageAnimate: {
                             opacity: 1
-                        },
-                        pageExit: {
-                            opacity: 0
                         }
                     }}
                 >

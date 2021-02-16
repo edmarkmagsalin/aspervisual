@@ -26,16 +26,12 @@ export default function About() {
             key='about'
             initial='pageInitial'
             animate='pageAnimate'
-            exit='pageExit'
             variants={{
                 pageInitial: {
                     opacity: 0
                 },
                 pageAnimate: {
                     opacity: 1
-                },
-                pageExit: {
-                    opacity: 0
                 }
             }}
         >
@@ -56,6 +52,19 @@ export default function About() {
                         </Link>
                     </Col>
                     <Col className={styles.content}>
+                        <motion.div
+                            initial='pageInitial'
+                            animate='pageAnimate'
+                            style={{ transition: 'opacity 1s ease-in-out' }}
+                            variants={{
+                                pageInitial: {
+                                    opacity: 0
+                                },
+                                pageAnimate: {
+                                    opacity: 1
+                                }
+                            }}
+                        >
                         <h2 className={styles.header3Type1}>AS&nbsp;PER</h2>&nbsp;<h2 className={styles.header3Type2}>VISUAL</h2>
                         <span className={styles.inlineImage}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="57.601" height="92" viewBox="0 0 57.601 92">
@@ -305,6 +314,7 @@ export default function About() {
                         <h2 className={styles.header3Type3}>FOR&nbsp;CREATORS, COMMUNITIES,</h2><br />
 
                         <span className={styles.oval}></span><h2 className={styles.header3Type3}>&amp;&nbsp;BUSINESSES.</h2><span className={styles.dash}></span>
+                        </motion.div>
                     </Col>
                 </Row>
             </Container>
