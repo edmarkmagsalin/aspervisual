@@ -29,7 +29,12 @@
     }
 }
 
-.content {
+.content{
+    max-width: 1447px;
+    margin:0 auto;
+    padding:0 40px;
+}
+/*.content {
     text-align: left;
     margin-left: 2.115em;
     line-height: 1.16326531em;
@@ -61,7 +66,7 @@
         
     }
 }
-
+*/
 .header3Type1 {
     font-family: 'RoxboroughCF-Bold';
     font-style: normal;
@@ -90,6 +95,26 @@
     font-size: 1em;
 }
 
+/*New header*/
+.header3Type5{
+    font-family:'GraphikSemiBold',Arial, sans-serif;
+    font-size:100px;
+    line-height:0.9;
+
+    @media(max-width:1300px){
+        font-size:60px;
+    }
+    @media(max-width:$lg){
+        font-size:50px;
+    }
+    @media(max-width: $md){
+        font-size:40px;
+    }
+
+     @media(max-width: $sm){
+        font-size:40px;
+    }
+}
 .inlineImage {
     width: 0.606938776em;
     height: 0.969387755em;

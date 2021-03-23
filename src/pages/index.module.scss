@@ -9,8 +9,9 @@
     position: absolute;
     margin: 0;
     padding: 0;
-    left: -1em;
-    transform: rotate(-90deg);
+    left:-1.5%;
+    transform: rotate(-90deg) translate(-100%, 0%);
+    transform-origin: 0 -100%;
     @media (max-width: $sm) {
         display: none;
     }
@@ -18,14 +19,21 @@
         display: none;
     }
 }
-
+.navLeft a,
+.navRight a{
+    font-size:15px;
+    line-height: 1.2;
+    font-family: "GraphikRegular", sans-serif;
+    text-decoration:none;
+}
 .navRight {
     display: block;
     position: absolute;
     margin: 0;
     padding: 0;
-    right: -1em;
-    transform: rotate(90deg);
+    right: -1.5%;
+    transform: rotate(90deg) translate(100%, 100%);
+    transform-origin: 100% 0;
     @media (max-width: $sm) {
         display: none;
     }
@@ -125,19 +133,38 @@
         border: solid 0.1966666667em $lightColor;
     }
 }
-
+.videoWrapper{
+    padding:0 10px 0 20px;
+}
+.videoContainer{
+    width: 100%;
+    /*height: 70vh;*/
+    /*max-width: 1254px;*/
+    overflow: hidden;
+    /*padding: 1rem;*/
+    margin: 0 auto;
+    border-radius: 26px;
+    display:flex;
+    align-items: center;
+    max-width: 1254px;
+    max-height: 706px;
+    @media(max-width: 1600px){
+         max-width: 900px;
+    max-height: 706px;
+    }
+}
 .videoInIframe {
-    width: 80%;
+    width: 100%;
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
 }
 
 .videoInIframe iframe {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+     position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 100%;
+    
 }

@@ -39,32 +39,30 @@ export default function Studio() {
                 <Container className={styles.aboutContainer}>
                     <Row middle>
                         <Col className={styles.content}>
-
-                            <motion.div
-                                initial='pageInitial'
-                                animate='pageAnimate'
-                                style={{ transition: 'opacity 1s ease-in-out' }}
-                                variants={{
-                                    pageInitial: {
-                                        opacity: 0
-                                    },
-                                    pageAnimate: {
-                                        opacity: 1
-                                    }
-                                }}
-                            >
-                            <h2 className={styles.header2Type1}>AS&nbsp;PER</h2>&nbsp;<h2 className={styles.header2Type2}>VISUAL</h2><br />
-
-                            <h5 className={styles.header5Type}>A Creative Studio in the works.</h5><br /><br /><br />
-                            
-                            <h4 className={styles.header4Type}>Creative&nbsp;Design, <br className={styles.showForMobile} />Video&nbsp;Editing, <br />Content&nbsp;Writing&nbsp;&&nbsp;Creation,  <br className={styles.showForMobile} />Production</h4>
-
-                            </motion.div>
+                            <div className={styles.containermaxWidth}>   
+                                <motion.div
+                                    initial='pageInitial'
+                                    animate='pageAnimate'
+                                    style={{ transition: 'opacity 1s ease-in-out' }}
+                                    variants={{
+                                        pageInitial: {
+                                            opacity: 0
+                                        },
+                                        pageAnimate: {
+                                            opacity: 1
+                                        }
+                                    }}
+                                >
+                                <h2 className={styles.headerMain}><span className={styles.header2Type3}>AS PER</span><span className={styles.header2Type4}> VISUAL</span></h2>
+                                <h5 className={styles.header5Type2}>Design, Content Writing, Photograpy Video Editing, & Production</h5>
+                              
+                                </motion.div>
+                            </div>
                         </Col>
                         <Col sm='1' className={styles.navRight}>
                             <Link href='/'>
                                 <a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="58.753" height="35.506" viewBox="0 0 58.753 35.506">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="35.506" viewBox="0 0 58.753 35.506">
                                         <g id="Arrow" transform="translate(-1814 -522.747)">
                                             <rect id="Rectangle_2" data-name="Rectangle 2" width="55" height="4" transform="translate(1814 539)" fill="currentColor"/>
                                             <rect id="Rectangle_3" data-name="Rectangle 3" width="25" height="4" transform="translate(1852.247 555.425) rotate(-45)" fill="currentColor"/>

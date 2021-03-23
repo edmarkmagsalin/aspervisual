@@ -4,7 +4,7 @@
     
     align-self: center;
 
-    @media (max-width: $sm) {
+ /*   @media (max-width: $sm) {
         align-self: flex-start;
         margin-top: 85px;
     }
@@ -12,7 +12,7 @@
     @media (max-height: $sm) {
         align-self: flex-start;
         margin-top: 85px;
-    }
+    }*/
 }
 
 .navRight{
@@ -31,33 +31,10 @@
     }
 }
 
-.content {
-    text-align: center;
-
-    @media (max-width: $sm) {
-        font-size: 36px;
-        text-align: left;
-        margin-left: .8em;
-    }
-
-    @media (min-width: $sm) and (max-width: $md) {
-        font-size: 50px;
-    }
-    @media (min-width: $md) and (max-width: $lg) {
-        font-size: 80px;
-    }
-    @media (min-width: $lg) and (max-width: $xl) {
-        font-size: 100px;
-    }
-    @media (min-width: $xl) {
-        font-size: 142px;
-    }
-
-    @media (max-height: $sm) {
-        font-size: 36px;
-        text-align: left;
-        margin-left: .8em;
-    }
+.content{
+    max-width: 1447px;
+    margin:0 auto;
+  
 }
 
 .header2Type1 {
@@ -75,6 +52,58 @@
     font-size: 1em;
 }
 
+/*new header 2 */
+.headerMain{
+    font-family: 'RoxboroughCF-Bold', TimesNewRoman, serif;
+    font-size: 100px;
+    line-height: 1.3;
+    margin:0;
+    margin-block-start:0;
+    margin-block-end:0;
+
+    @media(max-width: $md){
+    	/*font-size: 80px;*/
+        line-height: 0.75;
+    }
+}
+.header2Type3 {
+    font-family: 'RoxboroughCF-Bold', TimesNewRoman, serif;
+    font-style: normal;
+    font-weight: normal;
+    display: inline;
+/*    font-size: 100px;
+    line-height: 1.3;
+    color:inherit; */   
+}
+
+.header2Type4 {
+    font-family: 'GraphikBold', Arial, sans-serif;
+    display: inline;
+/*    font-size: 100px;
+    line-height: 1.3;
+    color:inherit;*/
+}
+
+.header5Type2 {
+    font-size:50px;
+    font-weight:normal;
+    line-height:1.1;
+    margin-block-start:0;
+    margin-block-end:0;
+    margin:0;
+
+    @media(max-width: $md){
+        font-size:25px;
+    }
+}
+
+/* End */
+.containermaxWidth{
+    max-width:1000px;
+    margin:auto;
+    padding:0 40px;
+    text-align: center;
+}
 .header5Type {
     font-family: 'GraphikRegular';
     display: inline;

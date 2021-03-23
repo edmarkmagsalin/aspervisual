@@ -78,14 +78,7 @@ export default function Home() {
                 }
             }}
         >
-            <Modal
-                isOpen={isModalOpen}
-                onClick={() => toggleModal()}
-            >
-                <div id="yt-iframe" className={styles.videoInIframe}>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FgjHbiTIshA?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div>
-            </Modal>
+       
             <App>
                 <Container className={styles.indexContainer}>
                         <Row middle className={styles.indexRelativeContainer}>
@@ -94,66 +87,20 @@ export default function Home() {
                                     <a>STUDIO</a>
                                 </Link>
                             </Col>
-                            <Col className={styles.content}>
-                                <div style={{textAlign: 'left', display: 'inline-block'}}>
+                            <Col>
+                                <div className={styles.videoWrapper}>
+                                <div className={styles.videoContainer}>
 
-                                    {/* <motion.div
-                                        initial='pageInitial'
-                                        animate='pageAnimate'
-                                        style={{ transition: 'transform .4s ease-out' }}
-                                        variants={{
-                                            pageInitial: {
-                                                y: 100
-                                            },
-                                            pageAnimate: {
-                                                y: 0
-                                            }
-                                        }}
-                                    > */}
-                                    <motion.div
-                                        initial='pageInitial'
-                                        animate='pageAnimate'
-                                        style={{ transition: 'opacity .6s ease-out' }}
-                                        variants={{
-                                            pageInitial: {
-                                                opacity: 0
-                                            },
-                                            pageAnimate: {
-                                                opacity: 1
-                                            }
-                                        }}
-                                    >
-                                        <h1 className={styles.header1Type1}>AS&nbsp;PER</h1>
-                                    </motion.div>
-                                    
-                                    <motion.div
-                                        initial='pageInitial'
-                                        animate='pageAnimate'
-                                        style={{ transition: 'opacity .6s ease-in' }}
-                                        variants={{
-                                            pageInitial: {
-                                                opacity: 0
-                                            },
-                                            pageAnimate: {
-                                                opacity: 1
-                                            }
-                                        }}
-                                    >
-                                        <h1 className={styles.header1Type2}>VISUAL</h1>
-                                    </motion.div>
-                                    {/* </motion.div> */}
+                                <div id="yt-iframe1" className={styles.videoInIframe}>
+                                    <iframe src="https://www.youtube.com/embed/FgjHbiTIshA?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </div>
-                                
-                                <Button
-                                    text='PLAY REEL'
-                                    color='APV'
-                                    onClick={() => toggleModal('btn')}
-                                    className={styles.button}
-                                />
+                                </div>
+                                </div>
+                              
                             </Col>
                             <Col sm='1' className={styles.navRight}>
                                 <Link href='/about'>
-                                    <a>ABOUT</a>
+                                    <a>INFO</a>
                                 </Link>
                             </Col>
                         </Row>
