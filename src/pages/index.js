@@ -89,12 +89,12 @@ export default function Home() {
                             </Col>
                             <Col>
                                 <div className={styles.videoWrapper}>
-                                <div className={styles.videoContainer}>
+                                    <div className={styles.videoContainer}>
 
-                                <div id="yt-iframe1" className={styles.videoInIframe}>
-                                    <iframe src="https://www.youtube.com/embed/FgjHbiTIshA?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                </div>
-                                </div>
+                                        <div id="yt-iframe1" className={styles.videoInIframe}>
+                                            <iframe src="https://www.youtube.com/embed/FgjHbiTIshA?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        </div>
+                                    </div>
                                 </div>
                               
                             </Col>

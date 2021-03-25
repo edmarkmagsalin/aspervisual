@@ -1,18 +1,7 @@
 @import '@/styles/variables.scss';
 
 .aboutContainer {
-    
     align-self: center;
-
- /*   @media (max-width: $sm) {
-        align-self: flex-start;
-        margin-top: 85px;
-    }
-
-    @media (max-height: $sm) {
-        align-self: flex-start;
-        margin-top: 85px;
-    }*/
 }
 
 .navRight{
@@ -101,7 +90,7 @@
 .containermaxWidth{
     max-width:1000px;
     margin:auto;
-    padding:0 40px;
+    /*padding:0 40px;*/
     text-align: center;
 }
 .header5Type {

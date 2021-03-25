@@ -86,6 +86,8 @@ export default function App({
         }
     }
 
+
+
     return (
         <>
             <Section className={styles.header} fluid>
@@ -144,7 +146,7 @@ export default function App({
             <Section className={styles.main}>
                 {children}
             </Section>
-            <Section className={`${styles.footer} ${pathname !== '/' && styles.footerOtherPages}`}>
+            <Section className={`${styles.footer} ${styles.footerOtherPages}`}>
                 <Container>
                     <Row middle spaceBetween>
                   
@@ -181,23 +183,28 @@ export default function App({
                                     <span className={styles.dot} onClick={() => toggleTheme()}>&bull;</span>
                              </div>
                         </Col>
-                        
-                        { pathname === '/' && (
+                    </Row>
+                </Container>
+            </Section>
+
+            { pathname === '/' && (
                            <>
-                            <Col className={styles.footerContainer}>
-                                <div >
+                           <Container className={styles.footerContainer}>
+                            <Row>
+                                <Col>
+                            <div >
+                                
                                     <p>AS PER VISUAL - A CREATIVE STUDIO IN THE WORKS. EST. 2021. </p>
                                     <p> BASED IN MANILA, PH, CONTACT: <a href="">INSTRAGRAM</a>, <a href="mailto:">EMAIL"</a></p>
 
                                     <h2 className={styles.headerMain}><span className={styles.header2Type3}>AS PER</span><span className={styles.header2Type4}> VISUAL</span></h2>
-                                </div>
-                            </Col>
-                         </>
-                        )}
+                               
+                            </div>
+                        </Col>
                     </Row>
                 </Container>
-            </Section>
-            
+                         </>
+           )}
         </>
     )
 }
