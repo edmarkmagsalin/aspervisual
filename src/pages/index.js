@@ -81,13 +81,13 @@ export default function Home() {
        
             <App>
                 <Container className={styles.indexContainer}>
-                        <Row middle className={styles.indexRelativeContainer}>
-                            <Col sm='1' className={styles.navLeft}>
+                        <div middle className={styles.indexRelativeContainer}>
+                            <div sm='1' className={styles.navLeft}>
                                 <Link href='/studio'>
                                     <a>STUDIO</a>
                                 </Link>
-                            </Col>
-                            <Col>
+                            </div>
+                            <div>
                                 <div className={styles.videoWrapper}>
                                     <div className={styles.videoContainer}>
 
@@ -97,13 +97,13 @@ export default function Home() {
                                     </div>
                                 </div>
                               
-                            </Col>
-                            <Col sm='1' className={styles.navRight}>
+                            </div>
+                            <div sm='1' className={styles.navRight}>
                                 <Link href='/about'>
                                     <a>INFO</a>
                                 </Link>
-                            </Col>
-                        </Row>
+                            </div>
+                        </div>
                 </Container>
             </App>
         </motion.div>
