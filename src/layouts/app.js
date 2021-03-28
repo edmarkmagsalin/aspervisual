@@ -148,7 +148,7 @@ export default function App({
             </Section>
             <Section className={`${styles.footer} ${styles.footerOtherPages}`}>
                 <Container>
-                    <Row middle spaceBetween>
+                    <Row middle spaceBetween noWrap>
                   
                         <Col sm='6' md='6' lg='6' xl='6' className={`${pathname === '/'  && styles.hideHome}`} style={{paddingBottom: 8}}>
                             FOR PROJECT INQUIRIES<br />
@@ -189,20 +189,16 @@ export default function App({
 
             { pathname === '/' && (
                            <>
-                           <Container className={styles.footerContainer}>
-                            <Row>
-                                <Col>
-                            <div >
+                           <div className={styles.footerContainer}>
+                            
                                 
-                                    <p>AS PER VISUAL - A CREATIVE STUDIO IN THE WORKS. EST. 2021. </p>
-                                    <p> BASED IN MANILA, PH, CONTACT: <a href="">INSTRAGRAM</a>, <a href="mailto:">EMAIL"</a></p>
+                                    <p>A CREATIVE STUDIO IN THE WORKS. EST.2021. BASED IN MANILA</p>
+                                    <p> WORKING WORLDWIDE. CONTACT: <a href="">INSTRAGRAM</a>, <a href="mailto:">EMAIL</a></p>
 
                                     <h2 className={styles.headerMain}><span className={styles.header2Type3}>AS PER</span><span className={styles.header2Type4}> VISUAL</span></h2>
                                
                             </div>
-                        </Col>
-                    </Row>
-                </Container>
+                     
                          </>
            )}
         </>

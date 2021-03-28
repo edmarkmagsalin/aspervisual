@@ -78,34 +78,33 @@ export default function Home() {
                 }
             }}
         >
-       
-            <App>
-                <Container className={styles.indexContainer}>
-                        <div middle className={styles.indexRelativeContainer}>
-                            <div sm='1' className={styles.navLeft}>
+        <App>
+           <Container className={styles.indexContainer}>
+                        <Row middle className={styles.indexRelativeContainer}>
+                            <Col sm='1' className={styles.navLeft}>
                                 <Link href='/studio'>
                                     <a>STUDIO</a>
                                 </Link>
-                            </div>
-                            <div>
+                            </Col>
+                            <Col>
                                 <div className={styles.videoWrapper}>
                                     <div className={styles.videoContainer}>
 
                                         <div id="yt-iframe1" className={styles.videoInIframe}>
-                                            <iframe src="https://www.youtube.com/embed/FgjHbiTIshA?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                            <iframe src="/video/AS PER VISUAL - INTRO VIDEO.mp4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                         </div>
                                     </div>
                                 </div>
                               
-                            </div>
-                            <div sm='1' className={styles.navRight}>
+                            </Col>
+                            <Col sm='1' className={styles.navRight}>
                                 <Link href='/about'>
                                     <a>INFO</a>
                                 </Link>
-                            </div>
-                        </div>
+                            </Col>
+                        </Row>
                 </Container>
-            </App>
+        </App>
         </motion.div>
     )
 }
