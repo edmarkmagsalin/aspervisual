@@ -54,7 +54,7 @@ export default function Studio() {
                                     }}
                                 >
                                 <h2 className={styles.headerMain}><span className={styles.header2Type3}>AS PER</span><span className={styles.header2Type4}> VISUAL</span></h2>
-                                <h5 className={styles.header5Type2}>Design, Content Writing, Photograpy Video Editing, & Production</h5>
+                                <h5 className={styles.header5Type2}>Design, Content Writing, Photography Video Editing, & Production</h5>
                               
                                 </motion.div>
                             </div>
@@ -64,9 +64,9 @@ export default function Studio() {
                                 <a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19.235" viewBox="0 0 21 19.235">
                                       <g id="Arrow" transform="translate(-1843.253 -526.99)">
-                                        <rect id="Rectangle_2" data-name="Rectangle 2" width="18.328" height="3.559" transform="translate(1843.253 534.827)" fill="#fff"/>
-                                        <rect id="Rectangle_3" data-name="Rectangle 3" width="13.525" height="2.847" transform="translate(1852.676 544.211) rotate(-45)" fill="#fff"/>
-                                        <rect id="Rectangle_4" data-name="Rectangle 4" width="13.525" height="2.847" transform="translate(1854.689 526.99) rotate(45)" fill="#fff"/>
+                                        <rect id="Rectangle_2" data-name="Rectangle 2" width="18.328" height="3.559" transform="translate(1843.253 534.827)" fill="currentColor"/>
+                                        <rect id="Rectangle_3" data-name="Rectangle 3" width="13.525" height="2.847" transform="translate(1852.676 544.211) rotate(-45)" fill="currentColor"/>
+                                        <rect id="Rectangle_4" data-name="Rectangle 4" width="13.525" height="2.847" transform="translate(1854.689 526.99) rotate(45)" fill="currentColor"/>
                                       </g>
                                     </svg>
                                 </a>

@@ -15,7 +15,7 @@ export function MenuItem ({
                 { !!children ? (
                     children
                 ) : (
-                    <a>{!!text ? text : 'link'}</a>
+                    <a target="_blank">{!!text ? text : 'link'}</a>
                 )}
             </Link>
         </li>
