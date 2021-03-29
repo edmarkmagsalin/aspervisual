@@ -134,10 +134,11 @@
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
+    /*background: url('/loading.gif') no-repeat 50% top !important;*/
 }
 
 .videoInIframe iframe {
-     position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;

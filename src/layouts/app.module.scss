@@ -9,13 +9,13 @@
     height: $fixTopNavHeight;
     z-index: 9;
 
-    @media (max-width: $sm) {
+ /*   @media (max-width: $sm) {
         height: $fixTopNavHeightM;
     }
 
     @media (max-height: $sm) {
         height: $fixTopNavHeightM;
-    }
+    }*/
 }
 
 .topMenuDesktopContainer {
@@ -317,6 +317,7 @@
     font-weight: normal;
     margin:0;
     z-index:10;
+    position:relative;
     @media(max-width: 350px){
         font-size: 8px;
     }
