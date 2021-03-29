@@ -5,12 +5,7 @@
 
     @media (max-width: $sm) {
         align-self: flex-start;
-        margin-top: 72px;
-    }
-
-    @media (max-height: $sm) {
-        align-self: flex-start;
-        margin-top: 72px;
+        padding-top: 72px;
     }
 }
 
@@ -24,9 +19,7 @@
     @media (max-width: $sm) {
         display: none;
     }
-    @media (max-height: $sm) {
-        display: none;
-    }
+ 
 }
 
 .content{
