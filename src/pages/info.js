@@ -1,12 +1,12 @@
 import App from '@/layouts/app'
 import { Row, Col, Container } from '@/components'
-import styles from './about.module.scss'
+import styles from './info.module.scss'
 import { useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 
-export default function About() {
+export default function info() {
     const router = useRouter()
 
     useEffect(() => {
@@ -23,7 +23,7 @@ export default function About() {
 
     return (
         <motion.div
-            key='about'
+            key='info'
             initial='pageInitial'
             animate='pageAnimate'
             variants={{
@@ -36,19 +36,20 @@ export default function About() {
             }}
         >
         <App>
-            <Container className={styles.aboutContainer}>
+            <Container className={styles.infoContainer}>
                
                     <Row middle>
                         <Col sm='1' className={styles.navLeft}>
                             <Link href='/'>
                                 <a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 58.753 35.506">
-                                        <g id="Arrow" transform="translate(1872.753 558.253) rotate(-180)">
-                                            <rect id="Rectangle_2" data-name="Rectangle 2" width="55" height="4" transform="translate(1814 539)" fill="currentColor"/>
-                                            <rect id="Rectangle_3" data-name="Rectangle 3" width="25" height="4" transform="translate(1852.247 555.425) rotate(-45)" fill="currentColor"/>
-                                            <rect id="Rectangle_4" data-name="Rectangle 4" width="25" height="4" transform="translate(1855.075 522.747) rotate(45)" fill="currentColor"/>
-                                        </g>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19.235" viewBox="0 0 21 19.235">
+                                      <g id="Arrow" transform="translate(1864.253 546.224) rotate(-180)">
+                                        <rect id="Rectangle_2" data-name="Rectangle 2" width="18.328" height="3.559" transform="translate(1843.253 534.827)" fill="#fff"/>
+                                        <rect id="Rectangle_3" data-name="Rectangle 3" width="13.525" height="2.847" transform="translate(1852.676 544.211) rotate(-45)" fill="#fff"/>
+                                        <rect id="Rectangle_4" data-name="Rectangle 4" width="13.525" height="2.847" transform="translate(1854.689 526.99) rotate(45)" fill="#fff"/>
+                                      </g>
                                     </svg>
+
                                 </a>
                             </Link>
                         </Col>

@@ -122,10 +122,10 @@ export default function App({
                                         <>
                                             
                                             <MenuItem href='/studio' text='STUDIO' />
-                                            <MenuItem href='/about' text='INFO' />
+                                            <MenuItem href='/info' text='INFO' />
                                         </>
                                     )}
-                                    { pathname === '/about' && (
+                                    { pathname === '/info' && (
                                         <>
                                             <MenuItem href='/' text='HOME' />
                                             <MenuItem href='/studio' text='STUDIO' />
@@ -134,7 +134,7 @@ export default function App({
                                     { pathname === '/studio' && (
                                         <>
                                               <MenuItem href='/' text='HOME' />
-                                            <MenuItem href='/about' text='INFO' />
+                                            <MenuItem href='/info' text='INFO' />
                                         </>
                                     )}
                             </Menu>

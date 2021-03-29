@@ -45,39 +45,6 @@
     }
 }
 
-.content {
-    text-align: center;
-
-    @media (max-width: $sm) {
-        font-size: 81px;
-        
-    }
-
-    @media (min-width: $sm) and (max-width: $md) {
-        font-size: 130px;
-        
-    }
-    @media (min-width: $md) and (max-width: $lg) {
-        font-size: 165px;
-        
-    }
-    @media (min-width: $lg) and (max-width: $xl) {
-        font-size: 190px;
-        
-    }
-    @media (min-width: $xl) {
-        font-size: 250px;
-    }
-
-    @media (min-width: $xl) and (min-height: 1080px) {
-        font-size: 300px;
-    }
-
-    @media (max-height: $sm) {
-        font-size: 81px;
-    }
-}
-
 .header1Type1 {
     font-family: 'RoxboroughCF-Bold';
     font-weight: normal;

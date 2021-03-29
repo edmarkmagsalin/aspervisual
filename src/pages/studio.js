@@ -36,7 +36,7 @@ export default function Studio() {
             }}
         >
             <App>
-                <Container className={styles.aboutContainer}>
+                <Container className={styles.studioContainer}>
                     <Row middle>
                         <Col className={styles.content}>
                             <div className={styles.containermaxWidth}>   
@@ -62,12 +62,12 @@ export default function Studio() {
                         <Col sm='1' className={styles.navRight}>
                             <Link href='/'>
                                 <a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="35.506" viewBox="0 0 58.753 35.506">
-                                        <g id="Arrow" transform="translate(-1814 -522.747)">
-                                            <rect id="Rectangle_2" data-name="Rectangle 2" width="55" height="4" transform="translate(1814 539)" fill="currentColor"/>
-                                            <rect id="Rectangle_3" data-name="Rectangle 3" width="25" height="4" transform="translate(1852.247 555.425) rotate(-45)" fill="currentColor"/>
-                                            <rect id="Rectangle_4" data-name="Rectangle 4" width="25" height="4" transform="translate(1855.075 522.747) rotate(45)" fill="currentColor"/>
-                                        </g>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19.235" viewBox="0 0 21 19.235">
+                                      <g id="Arrow" transform="translate(-1843.253 -526.99)">
+                                        <rect id="Rectangle_2" data-name="Rectangle 2" width="18.328" height="3.559" transform="translate(1843.253 534.827)" fill="#fff"/>
+                                        <rect id="Rectangle_3" data-name="Rectangle 3" width="13.525" height="2.847" transform="translate(1852.676 544.211) rotate(-45)" fill="#fff"/>
+                                        <rect id="Rectangle_4" data-name="Rectangle 4" width="13.525" height="2.847" transform="translate(1854.689 526.99) rotate(45)" fill="#fff"/>
+                                      </g>
                                     </svg>
                                 </a>
                             </Link>

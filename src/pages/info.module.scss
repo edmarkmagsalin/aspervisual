@@ -1,6 +1,6 @@
 @import '@/styles/variables.scss';
 
-.aboutContainer {
+.infoContainer {
     align-self: center;
 
     @media (max-width: $sm) {
@@ -100,7 +100,7 @@
         font-size:40px;
     }
 
-    @media(max-width:360px){
+    @media(max-width:380px){
         font-size:30px;
     }
 }

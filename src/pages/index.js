@@ -46,7 +46,7 @@ export default function Home() {
                 router.push('/studio')
             }
             if (e.code === 'ArrowRight') {
-                router.push('/about')
+                router.push('/info')
             }
             if (e.code === 'Escape') {
                 console.log(isModalOpen);
@@ -98,7 +98,7 @@ export default function Home() {
                               
                             </Col>
                             <Col sm='1' className={styles.navRight}>
-                                <Link href='/about'>
+                                <Link href='/info'>
                                     <a>INFO</a>
                                 </Link>
                             </Col>
