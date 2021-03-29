@@ -112,12 +112,12 @@
     overflow: hidden;
     /*padding: 1rem;*/
     margin: 0 auto;
-    border-radius: 26px;
+    /*border-radius: 26px;*/
     display:flex;
     align-items: center;
     max-width: 1254px;
     max-height: 706px;
-    
+    border:1px solid #000000;
     @media(max-width: 1600px){
         max-width: 60%;
         max-height: 90%;

@@ -193,7 +193,7 @@ export default function App({
                             
                                 
                                     <p>A CREATIVE STUDIO IN THE WORKS. EST.2021. BASED IN MANILA</p>
-                                    <p> WORKING WORLDWIDE. CONTACT: <a href="https://www.instagram.com/_aspervisual/" target="_blank">INSTRAGRAM</a>, <a href="mailto:hello@aspervisual">EMAIL</a></p>
+                                    <p> WORKING WORLDWIDE. CONTACT: <a href="https://www.instagram.com/_aspervisual/" target="_blank">INSTAGRAM</a>, <a href="mailto:hello@aspervisual">EMAIL</a></p>
 
                                     <h2 className={styles.headerMain}><span className={styles.header2Type3}>AS PER</span><span className={styles.header2Type4}> VISUAL</span></h2>
                                
