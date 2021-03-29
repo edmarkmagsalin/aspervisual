@@ -121,20 +121,20 @@ export default function App({
                                     { pathname === '/' && (
                                         <>
                                             
-                                            <MenuItem href='/studio' text='STUDIO' />
-                                            <MenuItem href='/info' text='INFO' />
+                                            <MenuItem href='/studio' text='STUDIO' target='_self'/>
+                                            <MenuItem href='/info' text='INFO'  target='_self'/>
                                         </>
                                     )}
                                     { pathname === '/info' && (
                                         <>
-                                            <MenuItem href='/' text='HOME' />
-                                            <MenuItem href='/studio' text='STUDIO' />
+                                            <MenuItem href='/' text='HOME'  target='_self'/>
+                                            <MenuItem href='/studio' text='STUDIO'  target='_self'/>
                                         </>
                                     )}
                                     { pathname === '/studio' && (
                                         <>
-                                              <MenuItem href='/' text='HOME' />
-                                            <MenuItem href='/info' text='INFO' />
+                                            <MenuItem href='/' text='HOME'  target='_self' />
+                                            <MenuItem href='/info' text='INFO'  target='_self' />
                                         </>
                                     )}
                             </Menu>
