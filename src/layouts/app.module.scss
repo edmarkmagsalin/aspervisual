@@ -50,7 +50,7 @@
         }
 
     }
-    @media (max-height: $sm) {
+  /*  @media (max-height: $sm) {
         display: block;
         text-align: right;
         margin-right: 36px;
@@ -59,7 +59,7 @@
             margin-left: 11px;
         }
 
-    }
+    }*/
 } 
 
 .main {
@@ -239,7 +239,7 @@
 
 .logoContainer a{
     @media(max-width: $sm){
-        padding-left:3px;
+        padding-left:0px;
     }
 }
 .logo {

@@ -67,7 +67,7 @@ export default function About() {
                                 }}
                             >
                            
-                            <h2 className={styles.header3Type5}><span>WE CREATE POWERFUL</span> <em>VISUAL CONTENT</em> <span>FOR CREATORS, BUSINESSES, <br/>& COMMUNITIES</span></h2>
+                            <h2 className={styles.header3Type5}>WE CREATE POWERFUL VISUAL CONTENT FOR CREATORS, BUSINESSES, <br/>& COMMUNITIES</h2>
                            
                             </motion.div>
                         </Col>

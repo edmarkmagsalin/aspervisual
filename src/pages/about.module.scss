@@ -30,43 +30,15 @@
 }
 
 .content{
-    max-width: 1447px;
+    max-width: 1482px;
     margin:0 auto;
     padding:0 20px;
-}
-/*.content {
-    text-align: left;
-    margin-left: 2.115em;
-    line-height: 1.16326531em;
 
-    @media (max-width: $sm) {
-        font-size: 29px;
-        margin-left: .8em;
-    }
-
-    @media (min-width: $sm) and (max-width: $md) {
-        font-size: 35px;
-    }
-    @media (min-width: $md) and (max-width: $lg) {
-        font-size: 45px;
-    }
-    @media (min-width: $lg) and (max-width: $xl) {
-        font-size: 55px;
-    }
-    @media (min-width: $xl) {
-        font-size: 68px;
-    }
-    @media (min-width: $xl) and (min-height: 1080px) {
-        font-size: 98px;
-    }
-
-    @media (max-height: $sm) {
-        font-size: 29px;
-        margin-left: .8em;
-        
+    @media(max-width: 1600px){
+        max-width: 1200px;
     }
 }
-*/
+
 .header3Type1 {
     font-family: 'RoxboroughCF-Bold';
     font-style: normal;
@@ -100,7 +72,9 @@
     font-family:'GraphikSemiBold',Arial, sans-serif;
     font-size:100px;
     line-height:0.9;
-
+    @media(max-width: 1600px){
+        font-size: 90px;
+    }
     @media(max-width:1300px){
         font-size:60px;
     }
@@ -113,6 +87,10 @@
 
      @media(max-width: $sm){
         font-size:40px;
+    }
+
+    @media(max-width:400px){
+        font-size:30px;
     }
 }
 .inlineImage {
