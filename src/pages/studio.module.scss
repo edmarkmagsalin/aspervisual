@@ -96,8 +96,16 @@
 .containermaxWidth{
     max-width:1000px;
     margin:auto;
-    /*padding:0 40px;*/
     text-align: center;
+
+    /*Specifically for content to center*/
+    @media(max-width: $sm){
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%,-50%);
+	    width: 100%;
+    }
 }
 .header5Type {
     font-family: 'GraphikRegular';
