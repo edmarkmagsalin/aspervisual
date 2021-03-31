@@ -53,7 +53,7 @@ export default function Studio() {
                                         }
                                     }}
                                 >
-                                <h2 className={styles.headerMain}><span className={styles.header2Type3}>AS PER</span><span className={styles.header2Type4}>&nbsp;VISUAL</span></h2>
+                                <h2 className={styles.headerMain}><span className={styles.header2Type3}>AS PER</span><span>&nbsp;</span><span className={styles.header2Type4}>VISUAL</span></h2>
                                 <h5 className={styles.header5Type2}>Design, Content Writing, Photography Video Editing, & Production</h5>
                               
                                 </motion.div>
