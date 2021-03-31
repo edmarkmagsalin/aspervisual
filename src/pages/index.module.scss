@@ -2,9 +2,11 @@
 
 .indexContainer {
     align-self: center;
-    margin-bottom:60px;
-    /*For video */
    
+    /*For video */
+    @media(max-width:$sm){
+         padding-bottom:50px;
+    }
 }
 
 .navLeft {
@@ -116,7 +118,7 @@
     display:flex;
     align-items: center;
     max-width: 1254px;
-    max-height: 706px;
+    max-height: 606px;
   
     @media(max-width: 1600px){
         max-width: 60%;
