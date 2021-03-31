@@ -10,14 +10,18 @@
     position: absolute;
     margin: 0;
     padding: 0;
-    right: 0;
-    transform: translateY(50%);
+    right: 3rem;
+    transform: translateY(-50%);
     @media (max-width: $sm) {
         display: none;
     }
     @media (max-height: $sm) {
         display: none;
     }
+
+    @media (min-width: 992px) and (max-width: 1200px){
+		right: 2rem;
+	}
 }
 
 .content{
