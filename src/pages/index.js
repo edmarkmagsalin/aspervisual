@@ -91,7 +91,9 @@ export default function Home() {
                                     <div className={styles.videoContainer}>
 
                                         <div id="yt-iframe1" className={styles.videoInIframe}>
-                                            <iframe src="/video/AS PER VISUAL - INTRO VIDEO - FINAL.mp4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                            <video loop="true" autoplay="autoplay" id="vid">
+                                            	<source src="/video/AS PER VISUAL - INTRO VIDEO - FINAL.mp4" type="video/mp4"/>
+                                            </video>
                                         </div>
                                     </div>
                                 </div>
