@@ -1,0 +1,28 @@
+.preloader-box
+{
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background-color: #000000;
+}
+.bar 
+{ 
+  background-color: #819FF7; 
+  width:0%; 
+  height:5px; 
+  border-radius: 3px; 
+  position:fixed;
+  top:0;
+ 
+/*   transition:0.3s; */
+}
+.percent 
+{ 
+  position:absolute; 
+  display:inline-block; 
+  top:3px; 
+  left:48%; 
+}

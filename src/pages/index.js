@@ -11,17 +11,51 @@ export default function Home() {
     const router = useRouter()
     const [isModalOpen, setIsModalOpen] = useState(false)
 
-    const stopVideo = (element) => {
-        const iframe = element.querySelector('iframe');
-        const video = element.querySelector('video');
-        if(iframe) {
-            const iframeSrc = iframe.src;
-            iframe.src = iframeSrc;
-        }
-        if(video) {
+    // const stopVideo = (element) => {
+    //     const iframe = element.querySelector('iframe');
+    //     const video = element.querySelector('video');
+    //     if(iframe) {
+    //         const iframeSrc = iframe.src;
+    //         iframe.src = iframeSrc;
+    //     }
+    //     if(video) {
+    //         video.pause();
+    //     }
+    // }
+
+
+     const playVideo = () => {
+         const video = document.querySelector('video');
+       
+         const play_btn = document.querySelector('#playBtn');
+        if(video.paused == true) {
+            video.play();
+            play_btn.innerText = "Pause";
+
+        }else{
             video.pause();
+            play_btn.innerText = "Play";
         }
     }
+
+    const muteVideo = () => {
+
+        const video = document.querySelector('video');
+         const mute_btn = document.querySelector('#muteBtn');
+
+        if(video.muted == false) {
+          
+
+            video.muted = true;
+            mute_btn.innerText = "Unmute";
+
+        }else{
+             video.muted = false;
+            mute_btn.innerText = "Mute";
+        }
+    }
+
+
 
     const toggleModal = (e) => {
 
@@ -91,9 +125,14 @@ export default function Home() {
                                     <div className={styles.videoContainer}>
 
                                         <div id="yt-iframe1" className={styles.videoInIframe}>
-                                            <video loop="true" autoplay="autoplay" id="vid">
-                                            	<source src="/video/AS PER VISUAL - INTRO VIDEO - FINAL.mp4" type="video/mp4"/>
-                                            </video>
+                                           <video loop="" autoPlay="autoPlay" id="vid">
+                                             <source src="/video/AS PER VISUAL - INTRO VIDEO - FINAL.mp4" type="video/mp4"/>
+                                           </video>
+
+                                           <div className={styles.videoNavigation}>
+                                                <button id="playBtn" onClick={() => playVideo()}>Play</button>
+                                                <button id="muteBtn" onClick={() => muteVideo()}>Mute</button>
+                                           </div>
                                         </div>
                                     </div>
                                 </div>

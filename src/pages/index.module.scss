@@ -152,6 +152,36 @@
     }
 }
 
+.videoInIframe:hover video~ .videoNavigation{
+    opacity: 1;
+     transition: 0.5s;
+}
 .indexRelativeContainer{
     position: relative;
+}
+
+.videoNavigation{
+
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    z-index: 20;
+    padding: 2%;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+.videoNavigation button{
+    background: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "GraphikRegular", sans-serif;
+    cursor: pointer;
+
+}
+
+.videoNavigation button:not(:last-child){
+    margin-right: 10px;
 }
