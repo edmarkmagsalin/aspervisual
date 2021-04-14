@@ -117,12 +117,12 @@ export default function Home() {
                                     <div className={styles.videoContainer}>
 
                                         <div id="yt-iframe1" className={styles.videoInIframe}>
-                                           <video autoplay="autoplay" preload="true" loop="loop" muted>
+                                           <video autoPlay="autoPlay" preload="true" loop="loop" muted>
                                              <source src="/video/AS PER VISUAL - INTRO VIDEO - FINAL.mp4" type="video/mp4"/>
                                            </video>
 
                                            <div className={styles.videoNavigation}>
-                                                <button id="playBtn" onClick={() => playVideo()}>Playy</button>
+                                                <button id="playBtn" onClick={() => playVideo()}>Play</button>
                                                 <button id="muteBtn" onClick={() => muteVideo()}>Mute</button>
                                            </div>
                                         </div>
