@@ -122,7 +122,7 @@ export default function Home() {
                                            </video>
 
                                            <div className={styles.videoNavigation}>
-                                                <button id="playBtn" onClick={() => playVideo()}>Play</button>
+                                                <button id="playBtn" onClick={() => playVideo()}>Playy</button>
                                                 <button id="muteBtn" onClick={() => muteVideo()}>Mute</button>
                                            </div>
                                         </div>
