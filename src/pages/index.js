@@ -1,5 +1,5 @@
 import App from '@/layouts/app'
-import { Row, Col, Button, Container } from '@/components'
+import { Row, Col, Button, Container, Preloader } from '@/components'
 import styles from './index.module.scss'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -10,18 +10,6 @@ import { motion } from 'framer-motion'
 export default function Home() {
     const router = useRouter()
     const [isModalOpen, setIsModalOpen] = useState(false)
-
-    // const stopVideo = (element) => {
-    //     const iframe = element.querySelector('iframe');
-    //     const video = element.querySelector('video');
-    //     if(iframe) {
-    //         const iframeSrc = iframe.src;
-    //         iframe.src = iframeSrc;
-    //     }
-    //     if(video) {
-    //         video.pause();
-    //     }
-    // }
 
 
      const playVideo = () => {
@@ -99,6 +87,8 @@ export default function Home() {
     }, [])
 
     return (
+        <>
+          <Preloader></Preloader>
         <motion.div
             key='home'
             initial='pageInitial'
@@ -112,6 +102,8 @@ export default function Home() {
                 }
             }}
         >
+
+       
         <App>
            <Container className={styles.indexContainer}>
                         <Row middle className={styles.indexRelativeContainer}>
@@ -125,7 +117,7 @@ export default function Home() {
                                     <div className={styles.videoContainer}>
 
                                         <div id="yt-iframe1" className={styles.videoInIframe}>
-                                           <video loop="" autoPlay="autoPlay" id="vid">
+                                           <video autoplay="autoplay" preload="true" loop="loop" muted>
                                              <source src="/video/AS PER VISUAL - INTRO VIDEO - FINAL.mp4" type="video/mp4"/>
                                            </video>
 
@@ -147,5 +139,6 @@ export default function Home() {
                 </Container>
         </App>
         </motion.div>
+        </>
     )
 }
