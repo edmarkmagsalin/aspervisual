@@ -18,22 +18,20 @@ export function Preloader({
           var totalele=all.length;
           var per_inc=100/all.length;
 
-          if($(ele).on())
-          {
+          if($(ele).on()){
             var prog_width=per_inc+Number(document.getElementById("progress_width").value);
-            var prog_width2=per_inc-Number(document.getElementById("progress_width").value);
+            
             document.getElementById("progress_width").value=prog_width;
+            var timeout = setTimeout(function(){
+                  $("#progress_div").fadeOut("slow");
+            }, 3000);
             $("#bar1").animate({width:prog_width+"%","left":"0"},3,function(){
-              if(document.getElementById("bar1").style.width=="100%")
-              {
+              if(document.getElementById("bar1").style.width=="100%"){
                 
-                
-                $("#bar1").animate({ "left":prog_width+"%"}, 1000, function(){
+                      $("#bar1").animate({ "left":prog_width+"%"}, 1000, function(){
                       $("#progress_div").fadeOut("slow");
                     
                 });
-                
-              
               }         
             });
           }
@@ -57,14 +55,11 @@ export function Preloader({
                     if(document.readyState=="complete" || document.readyState=="interactive"){
                         var all = document.getElementsByTagName("*");
                          
-
                         for (var i=0, max=all.length; i < max; i++){
                           set_ele(all[i]);
-                        }
-                         
+                        }                    
 
                     }
-
                    
                 }
             
