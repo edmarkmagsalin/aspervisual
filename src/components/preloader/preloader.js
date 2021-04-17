@@ -30,8 +30,6 @@ export function Preloader({
                 
                 $("#bar1").animate({ "left":prog_width+"%"}, 1000, function(){
                       $("#progress_div").fadeOut("slow");
-                      $('body').addClass('preload_hidden');
-                     
                     
                 });
                 
@@ -52,15 +50,11 @@ export function Preloader({
 
         useEffect(() => {
            
-            
-            window.addEventListener("load", function(){
-                    document.getElementById('progress_div').style.display == 'none';
-            });
-
+        
                 document.onreadystatechange = (e) => {
                    
                     
-                    if(document.readyState=="complete"){
+                    if(document.readyState=="complete" || document.readyState=="interactive"){
                         var all = document.getElementsByTagName("*");
                          
 
