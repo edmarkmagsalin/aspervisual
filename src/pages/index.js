@@ -1,5 +1,5 @@
 import App from '@/layouts/app'
-import { Row, Col, Button, Container, Preloader } from '@/components'
+import { Row, Col, Button, Container } from '@/components'
 import styles from './index.module.scss'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
@@ -88,7 +88,7 @@ export default function Home() {
 
     return (
         <>
-          <Preloader></Preloader>
+          
         <motion.div
             key='home'
             initial='pageInitial'
